@@ -1,16 +1,16 @@
 function applyOperation(op1, op2, operator) {
-    let num1 = parseInt(op1);
-    let num2 = parseInt(op2);
+    let operand1 = parseInt(op1);
+    let operand2 = parseInt(op2);
 
     switch(operator) {
         case "+":
-            return num1 + num2;
+            return operand1 + operand2;
         case "-":
-            return num1 - num2;
+            return operand1 - operand2;
         case "*":
-            return num1 * num2;
+            return operand1 * operand2;
         case "/":
-            return (num2 === 0) ? num1 : num1 / num2;
+            return (operand2 === 0) ? operand1 : operand1 / operand2;
     }
 
     return NaN;
